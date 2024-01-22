@@ -20,6 +20,7 @@ class ScoreDisplay extends StatelessWidget {
         '$score',
         style: TextStyle(
           fontSize: ClickBattleConfig.scoreDisplayFontSize,
+          fontWeight: FontWeight.bold,
           color: color,
         ),
       ),

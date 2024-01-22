@@ -4,13 +4,11 @@ import 'package:clickbattle/configs/config.dart';
 class ClickArea extends StatelessWidget {
   final VoidCallback onTap;
   final Color color;
-  final IconData icon;
   final double angle;
 
   ClickArea({
     required this.onTap,
     required this.color,
-    required this.icon,
     this.angle = 0,
   });
 
@@ -28,7 +26,7 @@ class ClickArea extends StatelessWidget {
               Transform.rotate(
                 angle: angle,
                 child: Icon(
-                  icon,
+                  ClickBattleConfig.fingerIcon,
                   size: 50,
                   color: Colors.white,
                 ),
